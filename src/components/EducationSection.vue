@@ -51,7 +51,7 @@ const foundationTimeline = [
   {
     phase: 'Academic Foundation',
     title: 'B.Sc. Building (Management)',
-    subtitle: 'Obafemi Awolowo University',
+    subtitle: 'Obafemi Awolowo University · Completed 2024',
     paragraphs: [
       'Built a strong systems mindset around planning, sequencing, and lifecycle execution.',
       'That discipline now shapes how I design backend architecture and delivery workflows.'
@@ -79,7 +79,7 @@ const foundationTimeline = [
     subtitle: 'Product-aware engineering delivery',
     paragraphs: [
       'I translate product requirements into clear technical boundaries, implementation phases, and measurable outcomes.',
-      'The focus is to ship reliable systems quickly without creating hidden technical debt.'
+      'I support delivery through testing, debugging, technical documentation, and production maintenance.'
     ],
     points: []
   }

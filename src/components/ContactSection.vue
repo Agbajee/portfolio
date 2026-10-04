@@ -1,9 +1,11 @@
 <template>
   <section id="contact" class="contact-section route-section">
-    <div class="section-number">05 / Contact</div>
-    <h2 class="contact-title">LET'S BUILD SOMETHING</h2>
+    <div class="section-number">06 / Contact</div>
+    <h2 class="contact-title">LET'S CONNECT</h2>
     <p class="contact-subtitle">
-      Interested in working together? Let's connect and discuss your next project.
+      Open to full-time software development roles and selected product collaborations.
+      <br />
+      Lagos, Nigeria · Open to relocation to Canada &amp; global opportunities.
     </p>
     <div class="contact-links">
       <a href="mailto:agbajee835@gmail.com" target="_blank" rel="noopener noreferrer" class="contact-link">
@@ -18,10 +20,6 @@
         <BriefcaseIcon class="contact-link-icon" />
         linkedin.com/in/devagbaje
       </a>
-      <a href="https://wa.me/2348145302579" target="_blank" rel="noopener noreferrer" class="contact-link">
-        <ChatBubbleLeftRightIcon class="contact-link-icon" />
-        Whatsapp
-      </a>
     </div>
   </section>
 </template>
@@ -29,7 +27,6 @@
 <script setup>
 import {
   BriefcaseIcon,
-  ChatBubbleLeftRightIcon,
   CodeBracketIcon,
   EnvelopeIcon
 } from '@heroicons/vue/24/outline'

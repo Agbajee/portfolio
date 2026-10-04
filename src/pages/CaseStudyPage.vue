@@ -32,7 +32,7 @@
 
       <section class="case-study-grid route-section is-visible">
         <article class="case-study-panel">
-          <h2 class="case-study-section-title">Impact</h2>
+          <h2 class="case-study-section-title">Functionality</h2>
           <ul class="case-study-list">
             <li v-for="impact in project.impact" :key="impact">
               <ChevronRightIcon class="list-item-icon" />

@@ -9,7 +9,7 @@
         :key="project.slug"
         class="project-item"
       >
-        <div class="project-visual" aria-hidden="true">
+        <div class="project-visual">
           <div class="project-visual-head">
             <div class="project-visual-type">{{ project.visualType }}</div>
             <div class="project-visual-stage">{{ project.stage }}</div>
@@ -30,7 +30,7 @@
           <div class="project-tags">
             <span v-for="tag in project.tags" :key="tag" class="tag">{{ tag }}</span>
           </div>
-          <RouterLink class="project-link" :to="{ name: 'case-study', params: { slug: project.slug } }">
+          <RouterLink class="project-link" :aria-label="`View Case Study: ${project.title}`" :to="{ name: 'case-study', params: { slug: project.slug } }">
             <span>View Case Study</span>
             <ArrowUpRightIcon class="project-link-icon" />
           </RouterLink>

@@ -9,24 +9,24 @@
         <div class="tech-icon">BE</div>
         <h3 class="tech-title">Backend Engineering</h3>
         <ul class="tech-list">
-          <li>Laravel (API-first architecture)</li>
-          <li>PHP 8+</li>
-          <li>Authentication & 2FA Systems</li>
-          <li>RESTful API Design</li>
-          <li>Concurrency & Data Integrity</li>
+          <li>PHP / Laravel / REST API Design</li>
+          <li>Laravel Sanctum / Authentication</li>
+          <li>Authorization / RBAC</li>
+          <li>Webhooks / Transaction Processing</li>
+          <li>Background Jobs / Queues</li>
         </ul>
       </div>
 
       <!-- Database -->
       <div class="tech-card">
         <div class="tech-icon">DB</div>
-        <h3 class="tech-title">Database & Caching</h3>
+        <h3 class="tech-title">Database &amp; Performance</h3>
         <ul class="tech-list">
-          <li>MySQL (Schema Design & Indexing)</li>
-          <li>Query Optimization</li>
-          <li>Redis (Caching & Rate Limiting)</li>
-          <li>Transactions & Locking</li>
-          <li>Relational Modeling</li>
+          <li>MySQL / Database Design</li>
+          <li>Query Optimization / Indexing</li>
+          <li>Redis / Caching</li>
+          <li>Transactions / Idempotency</li>
+          <li>Performance Optimization</li>
         </ul>
       </div>
 
@@ -35,24 +35,24 @@
         <div class="tech-icon">FE</div>
         <h3 class="tech-title">Frontend & Mobile</h3>
         <ul class="tech-list">
-          <li>Vue.js</li>
-          <li>Flutter</li>
           <li>JavaScript</li>
-          <li>State Management</li>
-          <li>Responsive UI Systems</li>
+          <li>Vue.js</li>
+          <li>HTML5 / CSS3</li>
+          <li>Flutter</li>
+          <li>Responsive Web Development</li>
         </ul>
       </div>
 
       <!-- Infrastructure -->
       <div class="tech-card">
         <div class="tech-icon">INF</div>
-        <h3 class="tech-title">Infrastructure</h3>
+        <h3 class="tech-title">Infrastructure &amp; Tools</h3>
         <ul class="tech-list">
+          <li>Git / GitHub / Postman</li>
+          <li>Linux / NGINX / Apache</li>
           <li>DigitalOcean / Cloudways</li>
           <li>AWS S3</li>
-          <li>NGINX / Apache</li>
-          <li>Server Provisioning</li>
-          <li>Performance Monitoring</li>
+          <li>CDN Media Delivery</li>
         </ul>
       </div>
 

@@ -230,6 +230,7 @@ nav.nav-scrolled {
 }
 
 .hero-label {
+    font-weight: 400;
     font-family: 'JetBrains Mono', monospace;
     font-size: 11px;
     letter-spacing: 3px;
@@ -401,6 +402,11 @@ body.enhanced-motion .route-section.is-visible {
     letter-spacing: 2px;
     color: var(--dim);
     text-transform: uppercase;
+}
+
+/* Descriptive values share the existing stat cards without overflowing. */
+.stat-number.stat-number--text {
+    font-size: clamp(32px, 5vw, 56px);
 }
 
 /* Projects */

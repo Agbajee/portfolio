@@ -2,82 +2,83 @@ export const projects = [
   {
     number: '01',
     slug: 'gamified-short-form-video-backend',
-    title: 'Gamified Short-Form Video Backend',
-    stage: 'Production System',
-    visualType: 'Reward Infrastructure',
-    summary: 'Engineered a high-throughput, API-first backend for a reward-driven short-video platform with dual-wallet accounting, earning caps, referrals, and secure withdrawals.',
-    summarySecondary: 'Built to survive scale with concurrency-safe transactions, anti-abuse guardrails, and feed architecture tuned for heavy real-time demand.',
-    tags: ['Laravel', 'MySQL', 'Redis', 'Sanctum'],
+    title: 'Swype — Short-Form Social Video Platform',
+    stage: 'In Development',
+    visualType: 'DEVHQ Product',
+    summary: 'Developing Swype, a DEVHQ short-form social video application with a Flutter mobile client and Laravel backend, combining content discovery, social interactions, media processing, and wallet/reward functionality.',
+    summarySecondary: 'The platform uses API-driven architecture, asynchronous processing, transactional safeguards, and cloud media delivery to support a responsive mobile-first experience.',
+    tags: ['Flutter', 'Laravel', 'MySQL', 'REST APIs', 'AWS S3 / CDN'],
     metrics: [
-      { value: '2x', label: 'Wallet Layers' },
-      { value: '100%', label: 'Transactional Safety' },
-      { value: '<200ms', label: 'Core API Paths' }
+      { value: 'App', label: 'Flutter Client' },
+      { value: 'API', label: 'Laravel Backend' },
+      { value: 'CDN', label: 'Media Delivery' }
     ],
-    challenge: 'The platform needed to reward engagement in real time while preventing fraud vectors and race conditions around payouts.',
-    solution: 'Implemented transaction-safe wallet services, anti-abuse guardrails, and queue-backed processing for referral and withdrawal flows.',
+    challenge: 'Connect content discovery and social interactions with media processing and wallet/reward workflows while validating account access and sensitive transactions.',
+    solution: 'Developing a Flutter client connected to Laravel REST APIs, with queue-backed media processing, object storage, CDN delivery, and transaction-aware wallet services.',
     impact: [
-      'Stable payout logic under concurrent user activity',
-      'Reduced exploitation risk through layered validation',
-      'Predictable API response behavior under traffic bursts'
+      'Content feeds, search, comments, replies, and social interactions',
+      'Account authentication, authorization, and request validation',
+      'Wallet, reward, referral, and withdrawal workflows with payment/payout controls'
     ],
     architecture: [
-      'Modular services for wallet, rewards, referrals, and withdrawals',
-      'Redis-backed throttling and abuse detection checks',
-      'Idempotent payout handlers with database transactions'
+      'Flutter mobile client connected to Laravel REST APIs',
+      'Queue-backed video/image processing with AWS S3 object storage and CDN delivery',
+      'Transaction-aware wallet services with validation, rate controls, and abuse-prevention safeguards',
+      'MySQL query and feed/media delivery optimization'
     ]
   },
   {
     number: '02',
     slug: 'food-delivery-platform-api',
-    title: 'Food Delivery Platform API',
+    title: 'Multi-Tenant Food Ordering & Delivery Platform',
     stage: 'Multi-Role Platform',
-    visualType: 'Order Lifecycle Engine',
-    summary: 'Built the operational core of a full food-delivery ecosystem covering vendor onboarding, menu orchestration, order lifecycle, and strict role-based access.',
-    summarySecondary: 'Architected with modular APIs and a resilient relational model so new product features could ship faster without compromising reliability.',
-    tags: ['Laravel', 'Vue', 'MySQL', 'REST API'],
+    visualType: 'Ordering & Delivery',
+    summary: 'Developed a food ordering and delivery platform with customer, vendor/restaurant, rider, and administrator roles, supported by Laravel APIs and MySQL.',
+    summarySecondary: 'Implemented order, payment, and delivery workflows with Monnify integration, responsive interfaces, and administrative dashboards.',
+    tags: ['Laravel', 'MySQL', 'REST APIs', 'Monnify', 'Responsive UI'],
     metrics: [
-      { value: '6+', label: 'Core Roles' },
-      { value: '3x', label: 'Faster Feature Additions' },
-      { value: '99.9%', label: 'Order Integrity' }
+      { value: '4', label: 'User Roles' },
+      { value: 'API', label: 'Order Workflows' },
+      { value: 'Pay', label: 'Monnify' }
     ],
-    challenge: 'Different user types required strict boundaries and clean domain workflows without slowing down future feature expansion.',
-    solution: 'Introduced role-aware API modules, normalized data models, and clear order-state transitions with validation checkpoints.',
+    challenge: 'Support ordering and delivery across customers, restaurants, riders, and administrators with appropriate access boundaries and clear order states.',
+    solution: 'Developed role-aware Laravel APIs, MySQL data models, payment integration, and responsive dashboards for ordering, delivery, and administration.',
     impact: [
-      'Faster shipping of vendor and customer features',
-      'Cleaner maintainability through separated modules',
-      'Reliable end-to-end order status tracking'
+      'Customer ordering and vendor/restaurant order management',
+      'Payment workflows integrated with Monnify',
+      'Delivery status tracking and administrative interfaces'
     ],
     architecture: [
-      'Role-scoped API endpoints for admin, vendor, rider, and customer',
-      'Order pipeline states with explicit transition guards',
-      'Relational schema tuned for reporting and dashboard performance'
+      'Role-scoped API endpoints for customers, vendors, riders, and administrators',
+      'Order-state transitions with request validation',
+      'MySQL data models supporting orders, payments, delivery, and dashboards'
     ]
   },
   {
     number: '03',
     slug: 'authentication-and-security-systems',
-    title: 'Authentication & Security Systems',
-    stage: 'Security Layer',
-    visualType: 'Identity and Access Control',
-    summary: 'Architected a hardened identity layer with OTP flows, 2FA enforcement, device trust verification, and withdrawal protection for high-risk actions.',
-    summarySecondary: 'Stacked with rate controls, token hardening, and data-integrity safeguards to reduce abuse while keeping login friction low.',
-    tags: ['Laravel', 'Redis', 'JWT / Tokens', 'FCM'],
+    title: 'Authentication & Transaction Security',
+    stage: 'Engineering Focus',
+    visualType: 'Identity & Access',
+    summary: 'Implemented Laravel Sanctum authentication, authorization, role-based access control, and OTP verification for web and mobile application workflows.',
+    summarySecondary: 'Combined request validation and rate controls with idempotent processing and database transactions to protect sensitive operations and handle repeated transaction requests.',
+    tags: ['Laravel', 'Sanctum', 'RBAC', 'MySQL', 'Idempotency'],
     metrics: [
-      { value: '4+', label: 'Auth Factors' },
-      { value: '70%', label: 'Abuse Drop' },
-      { value: '24/7', label: 'Threat Guardrails' }
+      { value: 'OTP', label: 'User Checks' },
+      { value: 'RBAC', label: 'Access Control' },
+      { value: 'DB', label: 'Atomic Writes' }
     ],
-    challenge: 'Authentication needed to stay friction-aware for users while preserving strong protection on high-risk operations.',
-    solution: 'Built layered auth workflows combining OTP, second-factor checks, device trust, and endpoint-level rate controls.',
+    challenge: 'Validate user identity and permissions while handling sensitive operations and repeated transaction requests consistently.',
+    solution: 'Implemented Sanctum authentication, role-based authorization, OTP verification, request validation, and transaction safeguards in Laravel applications.',
     impact: [
-      'Improved account safety with minimal UX friction',
-      'Lower brute-force and token abuse incidents',
-      'Safer withdrawal and sensitive-operation endpoints'
+      'Authenticated access to protected application endpoints',
+      'Role-based authorization and verification for sensitive operations',
+      'Idempotent transaction handling for repeated requests'
     ],
     architecture: [
-      'Token lifecycle controls with forced rotation paths',
-      'Adaptive OTP and device verification logic',
-      'Redis-based throttling plus action-level audit trails'
+      'Laravel Sanctum authentication and role-based access checks',
+      'OTP verification, request validation, and endpoint rate controls',
+      'Database transactions and idempotent processing for transactional workflows'
     ]
   }
 ]

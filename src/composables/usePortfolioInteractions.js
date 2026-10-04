@@ -251,7 +251,7 @@ export function usePortfolioInteractions() {
       'Dart: Stream.periodic(Duration())',
       'Redis: INCR metrics:requests',
       'SQL: SELECT ... FOR UPDATE',
-      'JWT.verify(token)',
+      'Laravel: auth:sanctum',
       'rate_limit(req.ip, 60)',
       'cos(a+b)=cos(a)cos(b)-sin(a)sin(b)',
       'sin^2(x)+cos^2(x)=1'

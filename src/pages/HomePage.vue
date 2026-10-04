@@ -1,4 +1,5 @@
 <template>
+  <div class="home-page">
   <div class="page-loader">
     <div class="loader-text">Ayomide Agbaje</div>
   </div>
@@ -27,6 +28,7 @@
   <EducationSection />
   <ContactSection />
   <SiteFooter :year="year" />
+  </div>
 </template>
 
 <script setup>
