@@ -5,7 +5,7 @@
     <p class="contact-subtitle">
       Open to full-time software development roles and selected product collaborations.
       <br />
-      Lagos, Nigeria · Open to relocation to Canada &amp; global opportunities.
+      Lagos, Nigeria · Open to relocation &amp; global opportunities.
     </p>
     <div class="contact-links">
       <a href="mailto:agbajee835@gmail.com" target="_blank" rel="noopener noreferrer" class="contact-link">
